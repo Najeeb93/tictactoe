@@ -21,7 +21,13 @@ export default function App(): JSX.Element {
       gameState[0] === gameState[2] &&
       gameState[0] !== 'empty'
     ) {
-      setGameWinner(`${gameState[0]} won the game! 🥳`)
+      setGameWinner(`${gameState[0]} won the game! 🥳`);
+    } else if (
+      gameState[3] !== 'empty' &&
+      gameState[3] === gameState[4] &&
+      gameState[4] === gameState[5]
+    ) {
+      setGameWinner(`${gameState[3]} won the game! 🥳`)
     }
   }
   return (
