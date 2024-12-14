@@ -73,7 +73,12 @@ export default function App(): JSX.Element {
     if (gameWinner) {
       return Snackbar.show({
         text: gameWinner,
+        backgroundColor: '#000000',
+        textColor: '#FFFFFF'
       })
+    }
+    if(gameState[itemNumber] === 'empty') {
+      gameState[itemNumber] = isCross ? 'cross' : 'cross'
     }
   } 
   return (
