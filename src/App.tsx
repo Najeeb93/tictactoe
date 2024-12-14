@@ -40,7 +40,34 @@ export default function App(): JSX.Element {
       gameState[3] === gameState[6]
     ) {
       setGameWinner(`${gameState[0]} won the game! 🥳`);
+    } else if (
+      gameState[1] !== 'empty' &&
+      gameState[1] === gameState[4] &&
+      gameState[4] === gameState[7]
+    ) {
+      setGameWinner(`${gameState[1]} won the game! 🥳`);
+    }   else if (
+      gameState[2] !== 'empty' &&
+      gameState[2] === gameState[5] &&
+      gameState[5] === gameState[8]
+    ) {
+      setGameWinner(`${gameState[2]} won the game! 🥳`);
+    } else if (
+      gameState[0] !== 'empty' &&
+      gameState[0] === gameState[4] &&
+      gameState[4] === gameState[8]
+    ) {
+      setGameWinner(`${gameState[0]} won the game! 🥳`);
+    } else if (
+      gameState[2] !== 'empty' &&
+      gameState[2] === gameState[4] &&
+      gameState[4] === gameState[6]
+    ) {
+      setGameWinner(`${gameState[2]} won the game! 🥳`);
+    } else if (!gameState.includes('empty', 0)) {
+      setGameWinner('Draw game... ⌛️');
     }
+  }
   } 
   return (
     <SafeAreaView>
