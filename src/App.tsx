@@ -1,11 +1,16 @@
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView, StatusBar} from 'react-native';
 import React from 'react';
 
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
-    <View>
-      <Text style={{color: '#ffff'}}>Hello World</Text>
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+      <View>
+        <Text>
+          Tic Tac Toe
+        </Text>
+      </View>
+    </SafeAreaView>
   )
 }

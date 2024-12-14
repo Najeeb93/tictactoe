@@ -18,6 +18,7 @@ export default function Icons({name} : IconsProps) {
                 break;
     
         default:
+            return <Icon name="pencil" size={38} color="#0D0D0D" />
             break;
     }
 }
