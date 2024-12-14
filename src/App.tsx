@@ -1,6 +1,7 @@
-import {View, Text, SafeAreaView, StatusBar} from 'react-native';
+import {View, Text, SafeAreaView, StatusBar, StyleSheet} from 'react-native';
 import React from 'react';
-
+import Snackbar from 'react-native-snackbar';
+import Icons from './components/Icons';
 
 export default function App(): JSX.Element {
   return (
@@ -14,3 +15,5 @@ export default function App(): JSX.Element {
     </SafeAreaView>
   )
 }
+
+const styles = StyleSheet.create({});
