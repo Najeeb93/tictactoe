@@ -10,7 +10,8 @@ type IconsProps = PropsWithChildren<{
 export default function Icons({name}) {
     switch (name) {
         case 'circle':
-            return <Icon name="circle-then" />
+            return <Icon name="circle-then" size={38}
+            color='#F7CD2E' />
             break;
     
         default:
