@@ -68,6 +68,13 @@ export default function App(): JSX.Element {
       setGameWinner('Draw game... ⌛️');
     }
   }
+   
+  const onChangeItem = (itemNumber: number) => {
+    if (gameWinner) {
+      return Snackbar.show({
+        text: gameWinner,
+      })
+    }
   } 
   return (
     <SafeAreaView>
