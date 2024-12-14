@@ -79,8 +79,18 @@ export default function App(): JSX.Element {
     }
     if(gameState[itemNumber] === 'empty') {
       gameState[itemNumber] = isCross ? 'cross' : 'cross'
+      setIsCross(!isCross)
+    } else {
+      return Snackbar.show({
+        text: "Position is already filled",
+        backgroundColor: "red",
+        textColor: "#FFF"
+      })
     }
+
+    checkIsWinner()
   } 
+  
   return (
     <SafeAreaView>
       <StatusBar />
