@@ -13,6 +13,17 @@ export default function App(): JSX.Element {
     setGameWinner('')
     setGameState(new Array(9).fill('empty', 0, 9))
   }
+
+  const checkIsWinner = () => {
+    // checking winner of the game
+    if(
+      gameState[0] === gameState[1] &&
+      gameState[0] === gameState[2] &&
+      gameState[0] !== 'empty'
+    ) {
+      setGameWinner(`${gameState[0]} won the game! 🥳`)
+    }
+  }
   return (
     <SafeAreaView>
       <StatusBar />
