@@ -128,4 +128,16 @@ export default function App(): JSX.Element {
   )
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  playerInfo: {
+    height: 56,
+
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    borderRadius: 4,
+    paddingVertical: 8,
+    
+  },
+});
