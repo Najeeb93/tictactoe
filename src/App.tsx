@@ -94,7 +94,9 @@ export default function App(): JSX.Element {
   return (
     <SafeAreaView>
       <StatusBar />
-      
+      {gameWinner ? (
+        <View style={[styles.playerInfo, styles.winnerInfo]}></View>
+      ) : ()}
     </SafeAreaView>
   )
 }
