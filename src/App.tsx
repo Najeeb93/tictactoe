@@ -98,7 +98,13 @@ export default function App(): JSX.Element {
         <View style={[styles.playerInfo, styles.winnerInfo]}>
           <Text style={styles.winnerTxt}>{gameWinner}</Text>
         </View>
-      ) : ()}
+      ) : (
+        <View style={[styles.playerInfo, isCross ? styles.playerX : styles.playerO]}>
+          <Text style={styles.gameTurnTxt}>
+            Player {isCross? 'X' : 'O'}'s  Turn
+          </Text>
+        </View>
+      )}
     </SafeAreaView>
   )
 }
