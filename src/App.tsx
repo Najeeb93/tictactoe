@@ -138,6 +138,21 @@ const styles = StyleSheet.create({
 
     borderRadius: 4,
     paddingVertical: 8,
-    
+    marginVertical: 12,
+    marginHorizontal: 14,
+
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#333',
+    shadowOpacity: 0.2,
+    shadowRadius: 1.5,
   },
+  gameTurnTxt: {
+    fontSize: 20,
+    color: '#FFFFFF',
+    fontWeight: '600',
+  },
+  
 });
