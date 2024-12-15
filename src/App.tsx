@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import {View, Text, SafeAreaView, StatusBar, StyleSheet, FlatList, Pressable} from 'react-native';
 import React, { useState } from 'react';
 import Snackbar from 'react-native-snackbar';
 import Icons from './components/Icons';
@@ -105,6 +105,18 @@ export default function App(): JSX.Element {
           </Text>
         </View>
       )}
+      <FlatList 
+      numColumns={3}
+      data={gameState}
+      style={styles.grid}
+      renderItem={({item, index}) => (
+        <Pressable key={index} style={styles.card}
+        onPress={() => onChangeItem(index)}
+        >
+          
+        </Pressable>
+      )}
+      />
     </SafeAreaView>
   )
 }
