@@ -154,5 +154,27 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '600',
   },
-  
+  playerX: {
+    backgroundColor: '#38CC77',
+  },
+  playerO: {
+    backgroundColor: '#F7CD2E',
+  },
+  grid: {
+    margin: 12,
+  },
+  card: {
+    height: 100,
+    width: '33.33%',
+
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    borderWidth: 1,
+    borderColor: '#333',
+  },
+  winnerInfo: {
+    borderRadius: 8,
+    backgroundColor: '#38CC77',
+  }
 });
