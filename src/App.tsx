@@ -113,10 +113,17 @@ export default function App(): JSX.Element {
         <Pressable key={index} style={styles.card}
         onPress={() => onChangeItem(index)}
         >
-          
+          <Icons name={item} />
         </Pressable>
       )}
       />
+      <Pressable style={styles.gameBtn}
+      onPress={reloadGame}
+      >
+        <Text style={styles.gameBtnText}>
+          {gameWinner ? 'Start new game' : 'reload the game'}
+        </Text>
+      </Pressable>
     </SafeAreaView>
   )
 }
