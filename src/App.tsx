@@ -185,4 +185,11 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textTransform: 'capitalize',
   },
+  gameBtn: {
+    alignItems: 'center',
+    padding: 10,
+    borderRadius: 8,
+    marginHorizontal: 36,
+    backgroundColor: '#8D3DAF',
+  },
 });
