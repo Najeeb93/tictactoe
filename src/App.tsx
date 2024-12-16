@@ -192,4 +192,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 36,
     backgroundColor: '#8D3DAF',
   },
+  gameBtnText: {
+    fontSize: 18,
+    color: '#FFFFFF',
+    fontWeight: '500',
+  },
 });
