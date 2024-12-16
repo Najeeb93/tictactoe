@@ -176,5 +176,13 @@ const styles = StyleSheet.create({
   winnerInfo: {
     borderRadius: 8,
     backgroundColor: '#38CC77',
-  }
+
+    shadowOpacity: 0.1,
+  },
+  winnerTxt: {
+    fontSize: 20,
+    color: '#FFFFFF',
+    fontWeight: '600',
+    textTransform: 'capitalize',
+  },
 });
